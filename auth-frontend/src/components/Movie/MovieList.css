@@ -3,18 +3,19 @@
     height: 100%;
     margin-right: 25;
     border: 1px solid blue;
+    margin: .4rem;
 }
 
 .movielist__img__div {
     border: 1px solid pink;
-
 }
 
 .movie__img {
-    height: 15rem;
+    height: 100%;
     width: 100%;
 }
 
 .movie__title {
     font-size: 1.3em;
+    color: #f4f4f4;
 }

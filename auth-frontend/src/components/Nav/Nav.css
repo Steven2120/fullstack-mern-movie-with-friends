@@ -7,28 +7,46 @@
     justify-content: space-between;
   }
   .h1-logo {
-    padding: 20px;
+    margin: .7rem;
+    margin-left: 2rem;
   }
   .h1-logo a {
     text-decoration: none;
     color: white;
   }
+
+  .nav__link {
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+
+  .nav__link:hover {
+    color: #f5cb99;
+    transition: all .5s ease-out;
+  }
+
   .h1-logo h1 {
-    font-size: 20px;
+    font-size: 1.7rem;
   }
-  div ul {
-    padding: 20px;
+
+  .right-side-nav > ul {
+    padding: 1.5rem;
+    border: 1px solid red;
   }
-  div ul li {
+
+  .right-side-nav > ul > li {
     display: inline-block;
   }
-  div ul li a {
+
+  .nav__link {
     text-decoration: none;
-    color: white;
+    color: #f4f4f4;
   }
+
   .selected {
     border-bottom: 1px solid white;
   }
+
   .right-side-nav ul li:not(:last-child) {
     margin-right: 15px;
   }

@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Axios from "../utils/Axios";
+import "./MovieDetail.css";
 
 export class MovieDetail extends Component {
   //set default state of the following items to the following values
@@ -80,18 +81,18 @@ export class MovieDetail extends Component {
 
   showMovieDetail = () => {
     return (
-      <div style={{ display: "flex" }}>
-        <div>
+      <div className="movie__detail__div">
+        <div className="movie__poster">
           <img src={this.state.Poster} alt={this.state.Title} />
         </div>
-        <div>
-          <div>Actors: {this.state.Actors}</div>
-          <div>Awards: {this.state.Awards}</div>
-          <div>Country: {this.state.Country}</div>
-          <div>Plot: {this.state.Plot}</div>
-          <div>Poster: {this.state.Poster}</div>
-          <div>Rated: {this.state.Rated}</div>
-          <div>
+        <div className="movie__info">
+          <div className="subject">Actors: {this.state.Actors}</div>
+          <div className="subject">Awards: {this.state.Awards}</div>
+          <div className="subject">Country: {this.state.Country}</div>
+          <div className="subject">Plot: {this.state.Plot}</div>
+          <div className="subject">Poster: {this.state.Poster}</div>
+          <div className="subject">Rated: {this.state.Rated}</div>
+          <div className="subject">
             Ratings:{" "}
             {this.state.Ratings.map((item) => {
               return (
@@ -101,8 +102,8 @@ export class MovieDetail extends Component {
               );
             })}
           </div>
-          <div>Title: {this.state.Title}</div>
-          <div>imdbID: {this.state.imdbID}</div>
+          <div className="subject">Title: {this.state.Title}</div>
+          <div className="subject">imdbID: {this.state.imdbID}</div>
         </div>
       </div>
     );

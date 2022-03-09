@@ -260,6 +260,7 @@ export class Movie extends Component {
       <div>
         <div className="search__bar">
           <input
+            id="search__input"
             type="text"
             placeholder="Search something..."
             name="movie"
@@ -271,9 +272,7 @@ export class Movie extends Component {
         </div>
 
         <div className="movie__canvas">
-          <div>
-            <h3 className="canvas__title">Coolest Movie</h3>
-          </div>
+          <span className="canvas__title">Movies</span>
           <div className="movielist__div">
             <MovieList movieArray={this.state.movieArray} />
           </div>
@@ -284,21 +283,30 @@ export class Movie extends Component {
         ) : (
           <div className="pagination__div">
             <button
-              className="pagination__prev__btn"
               disabled={this.state.currentPage === 1 ? true : false}
+              className={
+                this.state.currentPage !== 1
+                  ? "pagination__prev__btn"
+                  : "pagination__prev__btn__off"
+              }
               onClick={this.prevPage}
             >
               Previous
             </button>
             {this.showpagination()}
             <button
-              className="pagination__next__btn"
               onClick={this.nextPage}
               disabled={
                 this.state.currentPage ===
                 this.state.pageArray[this.state.pageArray.length - 1]
                   ? true
                   : false
+              }
+              className={
+                this.state.currentPage !==
+                this.state.pageArray[this.state.pageArray.length - 1]
+                  ? "pagination__next__btn"
+                  : "pagination__next__btn__off"
               }
             >
               Next

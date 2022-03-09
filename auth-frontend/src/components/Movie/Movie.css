@@ -1,14 +1,30 @@
 .search__bar {
-    width: 500;
+    height: 2.5rem;
+    width: auto;
     margin: 0 auto;
     text-align: center;
     margin-top: 50px;
     border: 1px solid red;
 }
 
+#search__input {
+    outline: none;
+    height: 2rem;
+    width: 22rem;
+}
+
 .search__btn {
     cursor: pointer; 
     margin-left: 1rem;
+    height: 2rem;
+    width: 6rem;
+    border-radius: 20px;
+}
+
+.search__btn:hover {
+    background-color: #282c36;
+    color: #f4f4f4;
+    transition: all 0.5s ease-out;
 }
 
 .movie__canvas {
@@ -20,6 +36,13 @@
     display: flex;
     flex-direction: column;
     border: 1px solid lawngreen;
+}
+
+.canvas__title {
+    color: #f4f4f4;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
 }
 
 .movielist__div {
@@ -36,20 +59,49 @@
 }
 
 .pagination__div {
-    margin-left: 4.5em;
+    margin-left: 4.5rem;
     text-align: center;
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid white;
-    margin-top: 9em;
+    margin-top: 5rem;
+}
+
+.pagination__prev__btn__off {
+    cursor: pointer;
+    height: 1.7rem;
+    width: 6rem;
 }
 
 .pagination__prev__btn {
-    cursor: pointer; 
+    cursor: pointer;
+    height: 1.7rem;
+    width: 6rem;
+}
+
+.pagination__prev__btn:hover {
+    background-color: #282c36;
+    color: #f4f4f4;
+    transition: all 0.5s ease-out;
 }
 
 .pagination__next__btn {
     cursor: pointer;
+    height: 1.7rem;
+    width: 6rem;
+    margin-left: 1.7rem;
+}
+
+.pagination__next__btn__off {
+    cursor: pointer;
+    height: 1.7rem;
+    width: 6rem;
+}
+
+.pagination__next__btn:hover {
+    background-color: #282c36;
+    color: #f4f4f4;
+    transition: all 0.5s ease-out;
 }

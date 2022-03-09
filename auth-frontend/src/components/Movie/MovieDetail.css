@@ -1,0 +1,28 @@
+.movie__detail__div {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid red;
+    margin-bottom: 2rem;
+}
+
+.movie__poster {
+    border: 1px solid yellow;
+    width: auto;
+
+}
+
+.movie__info {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    color: #f4f4f4;
+    justify-content: center;
+    margin-left: 6rem;
+}
+
+.subject {
+    width: 90%;
+    font-size: 1.3em;
+    background-color: red;
+    word-wrap: break-word;
+}

@@ -10,14 +10,20 @@ export class Nav extends Component {
       <nav className="Navbar">
         <div className="h1-logo">
           <h1>
-            <Link to="/">Movie with friends!</Link>
+            <Link className="nav__link" to="/">
+              Movie with friends!
+            </Link>
           </h1>
         </div>
         <div className="right-side-nav">
           <ul>
             <li>
               {this.props.user ? (
-                <NavLink activeClassName="selected" to="/movie">
+                <NavLink
+                  className="nav__link"
+                  activeClassName="selected"
+                  to="/movie"
+                >
                   Movie Search
                 </NavLink>
               ) : (
@@ -26,7 +32,11 @@ export class Nav extends Component {
             </li>
             <li>
               {this.props.user ? (
-                <NavLink activeClassName="selected" to="/create-friend">
+                <NavLink
+                  className="nav__link"
+                  activeClassName="selected"
+                  to="/create-friend"
+                >
                   Create Friend
                 </NavLink>
               ) : (
@@ -35,11 +45,19 @@ export class Nav extends Component {
             </li>
             <li>
               {this.props.user ? (
-                <NavLink activeClassName="selected" to="/profile">
+                <NavLink
+                  className="nav__link"
+                  activeClassName="selected"
+                  to="/profile"
+                >
                   Welcome Back - {this.props.user.email}
                 </NavLink>
               ) : (
-                <NavLink activeClassName="selected" to="/sign-up">
+                <NavLink
+                  className="nav__link"
+                  activeClassName="selected"
+                  to="/sign-up"
+                >
                   Sign up
                 </NavLink>
               )}
@@ -47,6 +65,7 @@ export class Nav extends Component {
             <li>
               {this.props.user ? (
                 <NavLink
+                  className="nav__link"
                   activeStyle={{ borderBottom: "1px solid white" }}
                   to="/"
                   onClick={this.props.handleUserLogout}
@@ -55,6 +74,7 @@ export class Nav extends Component {
                 </NavLink>
               ) : (
                 <NavLink
+                  className="nav__link"
                   activeStyle={{ borderBottom: "1px solid white" }}
                   to="/login"
                 >

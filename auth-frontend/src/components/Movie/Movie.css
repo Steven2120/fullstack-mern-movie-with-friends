@@ -1,0 +1,55 @@
+.search__bar {
+    width: 500;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    border: 1px solid red;
+}
+
+.search__btn {
+    cursor: pointer; 
+    margin-left: 1rem;
+}
+
+.movie__canvas {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lawngreen;
+}
+
+.movielist__div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.movie__canvas > * {
+    width: auto;
+}
+
+.canvas__title {
+    font-size: 2em;
+}
+
+.pagination__div {
+    margin-left: 4.5em;
+    text-align: center;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    margin-top: 9em;
+}
+
+.pagination__prev__btn {
+    cursor: pointer; 
+}
+
+.pagination__next__btn {
+    cursor: pointer;
+}

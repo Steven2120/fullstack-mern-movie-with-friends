@@ -1,17 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./MovieList.css";
 
 function MovieList(props) {
   return props.movieArray.map((item) => {
     return (
-      <div
-        key={item.imdbID}
-        style={{
-          width: 100,
-          height: 100,
-          marginRight: 25,
-        }}
-      >
+      <div className="movielist__div" key={item.imdbID}>
         <Link
           style={{
             textDecoration: "none",
@@ -23,10 +17,10 @@ function MovieList(props) {
             search: `?t=${item.Title}`,
           }}
         >
-          <div>
-            <img src={item.Poster} alt={item.Title} />
+          <div className="movielist__img__div">
+            <img className="movie__img" src={item.Poster} alt={item.Title} />
           </div>
-          <div>
+          <div className="movie__title">
             Title: {item.Title}
             Year: {item.Year}
           </div>

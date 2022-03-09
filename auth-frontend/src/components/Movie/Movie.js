@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import MovieList from "./MovieList";
+import "./Movie.css";
 
 export class Movie extends Component {
   //sets default state to the following props with the following values
@@ -257,67 +258,42 @@ export class Movie extends Component {
   render() {
     return (
       <div>
-        <div
-          style={{
-            width: 500,
-            margin: "0 auto",
-            textAlign: "center",
-            marginTop: "50px",
-          }}
-        >
+        <div className="search__bar">
           <input
             type="text"
             placeholder="Search something..."
             name="movie"
             onChange={this.handleOnChange}
           />
-          <button
-            style={{ cursor: "pointer", marginLeft: "1rem" }}
-            type="submit"
-            onClick={this.onSubmit}
-          >
+          <button className="search__btn" type="submit" onClick={this.onSubmit}>
             Search
           </button>
         </div>
 
-        <div
-          style={{
-            width: 1200,
-            margin: "0 auto",
-            textAlign: "center",
-            marginTop: "50px",
-            display: "flex",
-          }}
-        >
-          <h3>Coolest Movie</h3>
-          <MovieList movieArray={this.state.movieArray} />
+        <div className="movie__canvas">
+          <div>
+            <h3 className="canvas__title">Coolest Movie</h3>
+          </div>
+          <div className="movielist__div">
+            <MovieList movieArray={this.state.movieArray} />
+          </div>
         </div>
 
         {this.state.totalPage <= 10 ? (
           ""
         ) : (
-          <div
-            style={{
-              marginTop: "9em",
-              marginLeft: "4.5em",
-              textAlign: "center",
-              width: "90%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
+          <div className="pagination__div">
             <button
+              className="pagination__prev__btn"
               disabled={this.state.currentPage === 1 ? true : false}
-              style={{ cursor: "pointer" }}
               onClick={this.prevPage}
             >
               Previous
             </button>
             {this.showpagination()}
             <button
+              className="pagination__next__btn"
               onClick={this.nextPage}
-              style={{ cursor: "pointer" }}
               disabled={
                 this.state.currentPage ===
                 this.state.pageArray[this.state.pageArray.length - 1]

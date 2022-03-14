@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import FriendList from "./FriendList";
+import "./Friend.css";
 
 export class Friend extends Component {
   render() {
@@ -8,11 +9,11 @@ export class Friend extends Component {
         <table id="friends">
           <thead>
             <tr id="tr">
-              <th>First name</th>
-              <th>Last name</th>
-              <th>Mobile number</th>
-              <th>Edit</th>
-              <th>Delete</th>
+              <th className="friend__table__top">First name</th>
+              <th className="friend__table__top">Last name</th>
+              <th className="friend__table__top">Mobile number</th>
+              <th className="friend__table__top">Edit</th>
+              <th className="friend__table__top">Delete</th>
             </tr>
           </thead>
           <tbody>

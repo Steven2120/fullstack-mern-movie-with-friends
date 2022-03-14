@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { toast } from "react-toastify";
 import Axios from "../utils/Axios";
+import "./FriendList.css";
 
 export class FriendList extends Component {
   state = {
@@ -64,7 +65,7 @@ export class FriendList extends Component {
       <tr key={friend._id}>
         {toggle ? (
           <>
-            <td>
+            <td className="friend__addition">
               <input
                 name="firstName"
                 onChange={this.handleUpdateFriendChange}
@@ -72,7 +73,7 @@ export class FriendList extends Component {
               />
             </td>
 
-            <td>
+            <td className="friend__addition">
               <input
                 name="lastName"
                 onChange={this.handleUpdateFriendChange}
@@ -80,7 +81,7 @@ export class FriendList extends Component {
               />
             </td>
 
-            <td>
+            <td className="friend__addition">
               <input
                 name="mobileNumber"
                 onChange={this.handleUpdateFriendChange}
@@ -90,26 +91,32 @@ export class FriendList extends Component {
           </>
         ) : (
           <>
-            <td>{friend.firstName}</td>
-            <td>{friend.lastName}</td>
-            <td>{friend.mobileNumber}</td>
+            <td className="friend__addition">{friend.firstName}</td>
+            <td className="friend__addition">{friend.lastName}</td>
+            <td className="friend__addition">{friend.mobileNumber}</td>
           </>
         )}
 
         {toggle ? (
           <td
+            className="friend__addition"
             style={{ cursor: "pointer" }}
             onClick={() => this.handleUpdateClick(friend._id)}
           >
             Update
           </td>
         ) : (
-          <td style={{ cursor: "pointer" }} onClick={this.handleToggle}>
+          <td
+            className="friend__addition"
+            style={{ cursor: "pointer" }}
+            onClick={this.handleToggle}
+          >
             Edit
           </td>
         )}
 
         <td
+          className="friend__addition"
           style={{ cursor: "pointer" }}
           onClick={() => this.handleDeleteClick(friend._id)}
         >

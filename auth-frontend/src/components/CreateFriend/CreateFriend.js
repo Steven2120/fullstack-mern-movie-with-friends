@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Friend from "./Friend";
 import { toast } from "react-toastify";
 import Axios from "../utils/Axios";
+import "./CreateFriend.css";
 
 export class CreateFriend extends Component {
   state = {
@@ -89,8 +90,11 @@ export class CreateFriend extends Component {
     return (
       <>
         <div className="update-container">
-          <h3>Create Friend</h3>
-          <form onSubmit={this.handleFriendSubmit}>
+          <h3 className="create__friend__title">Create Friend</h3>
+          <form
+            className="create__friend__form__div"
+            onSubmit={this.handleFriendSubmit}
+          >
             <div className="input-div">
               <input
                 placeholder="first name"

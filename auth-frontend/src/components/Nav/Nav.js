@@ -45,13 +45,19 @@ export class Nav extends Component {
             </li>
             <li>
               {this.props.user ? (
-                <NavLink
-                  className="nav__link"
-                  activeClassName="selected"
-                  to="/profile"
-                >
-                  Welcome Back - {this.props.user.email}
-                </NavLink>
+                <div>
+                  <span id="welcome">
+                    Welcome Back - {this.props.user.email}
+                  </span>
+                  <NavLink
+                    id="update__profile"
+                    className="nav__link"
+                    activeClassName="selected"
+                    to="/profile"
+                  >
+                    Update Profile
+                  </NavLink>
+                </div>
               ) : (
                 <NavLink
                   className="nav__link"

@@ -1,0 +1,32 @@
+.update-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.create__friend__title {
+    font-size: 2.5em;
+    color: #f4f4f4;
+}
+
+.create__friend__form__div > *{
+    align-items: center;
+    margin: 1rem;
+}
+
+.button-div {
+    margin: 1rem;
+}
+
+.button-div > button {
+    width: 40%;
+    border-radius: 20px;
+    background-color: #f4f4f4;
+    color: #282c36;
+    font-size: 1rem;  
+}
+
+.button-div > button:hover {
+    background-color: #282c36;
+    color: #f4f4f4;
+    transition: all .6s ease-in-out;
+}

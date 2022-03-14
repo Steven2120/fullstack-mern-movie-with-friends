@@ -17,7 +17,19 @@
 
   .nav__link {
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1em;
+  }
+
+  #welcome {
+    font-size: 1em;
+  }
+
+  #welcome:hover {
+    cursor: auto;
+  }
+
+  #update__profile {
+    margin-left: 1rem;
   }
 
   .nav__link:hover {
@@ -26,7 +38,7 @@
   }
 
   .h1-logo h1 {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 
   .right-side-nav > ul {

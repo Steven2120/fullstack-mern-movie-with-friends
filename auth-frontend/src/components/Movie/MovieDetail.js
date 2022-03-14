@@ -80,7 +80,7 @@ export class MovieDetail extends Component {
   };
 
   showMovieDetail = () => {
-    return (
+    return this.state.Ratings ? (
       <div className="movie__detail__div">
         <div className="movie__poster">
           <img src={this.state.Poster} alt={this.state.Title} />
@@ -104,6 +104,13 @@ export class MovieDetail extends Component {
           </div>
           <div className="subject">Title: {this.state.Title}</div>
           <div className="subject">imdbID: {this.state.imdbID}</div>
+        </div>
+      </div>
+    ) : (
+      <div className="no__movie__info__div">
+        <div>
+          We apologize, this movie does not currently have up to date
+          information
         </div>
       </div>
     );
@@ -149,6 +156,7 @@ export class MovieDetail extends Component {
             {this.showMovieDetail()}
             <div style={{ width: 250, margin: "0 auto", textAlign: "center" }}>
               <select
+                disabled={this.state.Ratings ? false : true}
                 style={{ marginBottom: "1rem", cursor: "pointer" }}
                 onChange={this.handleSelectChange}
               >
@@ -162,10 +170,12 @@ export class MovieDetail extends Component {
                 })}
               </select>
               <textarea
+                disabled={this.state.Ratings ? false : true}
                 style={{ width: "20em", height: "10em" }}
                 defaultValue={this.state.friendMessage}
               />
               <button
+                disabled={this.state.Ratings ? false : true}
                 style={{ marginTop: "1rem", cursor: "pointer" }}
                 onClick={this.handleFormSubmit}
               >

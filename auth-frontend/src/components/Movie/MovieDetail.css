@@ -26,3 +26,13 @@
     background-color: red;
     word-wrap: break-word;
 }
+
+.no__movie__info__div {
+    text-align: center;
+}
+
+.no__movie__info__div > div {
+    color: #f4f4f4;
+    margin: 10rem;
+    font-size: 2em;
+}

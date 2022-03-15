@@ -6,7 +6,6 @@ import MovieList from "./MovieList";
 import "./Movie.css";
 
 export class Movie extends Component {
-  //sets default state to the following props with the following values
   state = {
     movie: "",
     movieArray: [],
@@ -108,7 +107,6 @@ export class Movie extends Component {
     }
   };
 
-  //creates handler function that sets following state
   handleOnChange = (event) => {
     this.setState({
       movie: event.target.value,
@@ -135,6 +133,12 @@ export class Movie extends Component {
       //catches error and logs it
     } catch (e) {
       console.log(e);
+    }
+  };
+
+  handleEnterKey = (e) => {
+    if (e.key === "Enter") {
+      this.onSubmit();
     }
   };
 
@@ -265,6 +269,7 @@ export class Movie extends Component {
             placeholder="Search something..."
             name="movie"
             onChange={this.handleOnChange}
+            onKeyPress={this.handleEnterKey}
           />
           <button className="search__btn" type="submit" onClick={this.onSubmit}>
             Search

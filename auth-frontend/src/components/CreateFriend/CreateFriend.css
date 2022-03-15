@@ -13,19 +13,23 @@
     margin: 1rem;
 }
 
-.button-div {
-    margin: 1rem;
-}
-
-.button-div > button {
+.create__friend__btn {
     width: 40%;
     border-radius: 20px;
     background-color: #f4f4f4;
     color: #282c36;
-    font-size: 1rem;  
+    font-size: 1rem;
+    padding: .3rem;
+    margin: 1.2rem;  
 }
 
-.button-div > button:hover {
+.create__friend__btn:disabled {
+    background-color: #76787e;
+    color: rgb(75, 71, 71);
+    cursor: not-allowed !important;
+}
+
+.create__friend__btn:hover:enabled {
     background-color: #282c36;
     color: #f4f4f4;
     transition: all .6s ease-in-out;

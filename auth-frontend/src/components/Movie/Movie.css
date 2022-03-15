@@ -70,7 +70,7 @@
 }
 
 .pagination__prev__btn__off {
-    cursor: pointer;
+    cursor: not-allowed;
     height: 1.7rem;
     width: 6rem;
 }
@@ -95,7 +95,7 @@
 }
 
 .pagination__next__btn__off {
-    cursor: pointer;
+    cursor: not-allowed;
     height: 1.7rem;
     width: 6rem;
 }

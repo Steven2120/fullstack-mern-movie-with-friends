@@ -93,7 +93,7 @@ export class FriendList extends Component {
           <>
             <td className="friend__addition">{friend.firstName}</td>
             <td className="friend__addition">{friend.lastName}</td>
-            <td className="friend__addition">{friend.mobileNumber}</td>
+            <td className="friend__addition">{`${friend.mobileNumber}`}</td>
           </>
         )}
 

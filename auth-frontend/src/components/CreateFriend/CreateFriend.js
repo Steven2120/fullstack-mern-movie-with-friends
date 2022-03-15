@@ -121,9 +121,17 @@ export class CreateFriend extends Component {
                 value={this.state.friendMobileNumber}
               />
             </div>
-            <div className="button-div">
-              <button style={{ cursor: "pointer" }}>Create Friend</button>
-            </div>
+            <button
+              className="create__friend__btn"
+              disabled={
+                !this.state.friendMobileNumber ||
+                !this.state.friendFirstName ||
+                !this.state.friendLastName
+              }
+              style={{ cursor: "pointer" }}
+            >
+              Create Friend
+            </button>
           </form>
         </div>
         <hr />

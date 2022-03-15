@@ -111,6 +111,7 @@ export class Movie extends Component {
     this.setState({
       movie: event.target.value,
     });
+    console.log(this.state.movie);
   };
 
   //function that sets variable to ajax call and sets state movieArray to result.data.Search

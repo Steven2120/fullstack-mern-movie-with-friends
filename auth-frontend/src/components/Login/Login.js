@@ -3,10 +3,10 @@ import React, { Component } from "react";
 import { isEmpty } from "validator";
 import { toast } from "react-toastify";
 import Axios from "../utils/Axios";
-import "./Login.css";
 import jwtDecode from "jwt-decode";
 import checkIfUserIsAuth from "../utils/checkIfUserIsAuth";
 import setAxiosAuthToken from "../utils/setAxiosAuthToken";
+import "./Login.css";
 
 export class Login extends Component {
   state = {
@@ -138,6 +138,7 @@ export class Login extends Component {
               <div className="block-container">
                 <label htmlFor="email">Email</label>
                 <input
+                  className="login__input"
                   type="email"
                   id="email"
                   placeholder="Email"
@@ -155,6 +156,7 @@ export class Login extends Component {
               <div className="block-container">
                 <label htmlFor="password">Password</label>
                 <input
+                  className="login__input"
                   type="text"
                   id="password"
                   placeholder="Password"

@@ -1,4 +1,4 @@
-.update-container {
+/* .update-container {
     max-width: 850px;
     margin: 0 auto;
     text-align: center;
@@ -48,4 +48,49 @@
 
 #friends tbody tr:hover {
     background-color: #ddd;
+} */
+
+.update-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.update__title {
+    font-size: 2.5em;
+    color: #f4f4f4;
+}
+
+.update__form {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-div {
+    height: 2rem;
+    width: 30vw;
+}
+
+.input-div > input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+}
+
+.button-div {
+    height: 1.7rem;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+}
+
+.button-div > button {
+    height: inherit;
+    width: 30%;
+    border-radius: 20px;
 }

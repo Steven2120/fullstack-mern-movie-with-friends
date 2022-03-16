@@ -1,0 +1,27 @@
+.login__input {
+    outline: none;
+}
+
+.button-container {
+    margin-top: 2rem;
+    height: 3rem;
+}
+
+.button-container > button {
+    height: inherit;
+    width: 8rem;
+    background-color: #f4f4f4;
+    color: #282c36;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+.button-container > button:enabled:hover {
+    background-color: #282c36;
+    color: #f4f4f4;
+    transition: all .7s ease-out;
+}
+
+.button-container > button:disabled:hover {
+    cursor: not-allowed;
+}

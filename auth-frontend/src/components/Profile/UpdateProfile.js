@@ -71,8 +71,8 @@ export class UpdateProfile extends Component {
   render() {
     return (
       <div className="update-container">
-        <h3>Update Profile</h3>
-        <form onSubmit={this.handleUserUpdateSubmit}>
+        <h3 className="update__title">Update Profile</h3>
+        <form className="update__form" onSubmit={this.handleUserUpdateSubmit}>
           <div className="input-div">
             <input
               placeholder="first name"

@@ -19,3 +19,8 @@
     font-size: 1.3em;
     color: #f4f4f4;
 }
+
+.not__found {
+    color: red;
+    font-size: 1.5em;
+}

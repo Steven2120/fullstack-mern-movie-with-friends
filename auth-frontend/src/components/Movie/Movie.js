@@ -63,6 +63,7 @@ export class Movie extends Component {
         //logs results object where you can find total results
         console.log(result);
 
+        //logs total amount of pages for the searched result including default random search
         console.log(totalPageArray);
 
         this.setState({
@@ -131,9 +132,13 @@ export class Movie extends Component {
         totalPage: +result.data.totalResults,
         pageArray: totalPageArray,
       });
+      console.log(this.state.movie);
       //catches error and logs it
     } catch (e) {
-      console.log(e);
+      this.setState({
+        error: e,
+      });
+      console.log(this.state.error);
     }
   };
 
@@ -304,16 +309,12 @@ export class Movie extends Component {
               onClick={this.nextPage}
               disabled={
                 this.state.currentPage ===
-                this.state.pageArray[this.state.pageArray.length - 1]
+                  this.state.pageArray[this.state.pageArray.length - 1] ||
+                this.state.movieArray === undefined
                   ? true
                   : false
               }
-              className={
-                this.state.currentPage !==
-                this.state.pageArray[this.state.pageArray.length - 1]
-                  ? "pagination__next__btn"
-                  : "pagination__next__btn__off"
-              }
+              className="pagination__next__btn"
             >
               Next
             </button>

@@ -94,14 +94,12 @@
     margin-left: 1.7rem;
 }
 
-.pagination__next__btn__off {
-    cursor: not-allowed;
-    height: 1.7rem;
-    width: 6rem;
-}
-
-.pagination__next__btn:hover {
+.pagination__next__btn:enabled:hover {
     background-color: #282c36;
     color: #f4f4f4;
     transition: all 0.5s ease-out;
+}
+
+.pagination__next__btn:disabled:hover {
+    cursor: not-allowed;
 }

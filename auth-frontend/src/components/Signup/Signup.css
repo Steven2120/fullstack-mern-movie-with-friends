@@ -1,9 +1,9 @@
 body {
     background-color: #282c36;
   }
-  .container {
-    width: 850px;
-    height: 600px;
+  .signup__container {
+    width: 45%;
+    height: 60%;
     background-color: rgba(0, 0, 0, 0.678);
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
     position: absolute;
@@ -16,10 +16,11 @@ body {
   }
   .form-text {
     text-align: center;
-    margin: 25px 25px;
+    margin: 1.5rem 1.5rem;
     font-size: 40px;
   }
-  .form-div {
+  .form-div-signup {
+    border: 1px solid red;
     display: flex;
     justify-content: center;
   }
@@ -27,7 +28,7 @@ body {
     display: flex;
     justify-content: space-evenly;
   }
-  .form {
+  .form__signup {
     width: 100%;
   }
   .form-group-inline .inline-container {
@@ -44,11 +45,12 @@ body {
   .form-group-block {
     margin-left: 82px;
     margin-top: 20px;
+
   }
   .block-container label {
     display: block;
     margin-bottom: 3px;
-    margin-top: 20px;
+    margin-top: 1.5rem;
   }
   .form-group-block .block-container input {
     padding: 5px 5px;
@@ -60,15 +62,16 @@ body {
     margin-top: 2%;
   }
   .button-container > button {
-    padding: 10px 10px;
     border: none;
     background-color: black;
     color: #f4f4f4;
-    font-size: 25px;
+    font-size: 1.6em;
     cursor: pointer;
   }
   .button-container button:disabled {
     background-color: grey;
+    font-size: 1.6em;
+
   }
   .errorMessage {
     font-size: 1em;

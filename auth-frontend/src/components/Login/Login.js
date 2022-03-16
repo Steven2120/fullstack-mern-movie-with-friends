@@ -129,11 +129,11 @@ export class Login extends Component {
 
     //returns the following jsx
     return (
-      <div className="container">
+      <div className="login__container">
         <div className="form-text">Log in</div>
 
         <div className="form-div">
-          <form className="form" onSubmit={this.handleOnSubmit}>
+          <form className="form__login" onSubmit={this.handleOnSubmit}>
             <div className="form-group-block">
               <div className="block-container">
                 <label htmlFor="email">Email</label>

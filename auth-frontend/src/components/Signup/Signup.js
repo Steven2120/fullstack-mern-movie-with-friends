@@ -258,15 +258,16 @@ export class Signup extends Component {
     } = this.state;
 
     return (
-      <div className="container">
+      <div className="signup__container">
         <div className="form-text">Sign up</div>
 
-        <div className="form-div">
-          <form className="form" onSubmit={this.handleOnSubmit}>
+        <div className="form-div-signup">
+          <form className="form__signup" onSubmit={this.handleOnSubmit}>
             <div className="form-group-inline">
               <div className="inline-container">
                 <label htmlFor="firstName">First Name</label>
                 <input
+                  className="signup__input"
                   type="text"
                   id="firstName"
                   value={firstName}
@@ -285,6 +286,7 @@ export class Signup extends Component {
               <div className="inline-container">
                 <label htmlFor="lastName">Last Name</label>
                 <input
+                  className="signup__input"
                   type="text"
                   id="lastName"
                   value={lastName}
@@ -304,6 +306,7 @@ export class Signup extends Component {
               <div className="block-container">
                 <label htmlFor="email">Email</label>
                 <input
+                  className="signup__input"
                   type="text"
                   id="email"
                   value={email}
@@ -321,6 +324,7 @@ export class Signup extends Component {
               <div className="block-container">
                 <label htmlFor="username">Username</label>
                 <input
+                  className="signup__input"
                   type="text"
                   id="username"
                   value={username}
@@ -340,6 +344,7 @@ export class Signup extends Component {
               <div className="block-container">
                 <label htmlFor="password">Password</label>
                 <input
+                  className="signup__input"
                   type="text"
                   id="password"
                   value={password}
@@ -359,6 +364,7 @@ export class Signup extends Component {
               <div className="block-container">
                 <label htmlFor="confirmPassword">Confirm Password</label>
                 <input
+                  className="signup__input"
                   type="text"
                   id="confirmPassword"
                   value={confirmPassword}

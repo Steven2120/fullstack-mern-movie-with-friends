@@ -130,11 +130,10 @@ export class Login extends Component {
     //returns the following jsx
     return (
       <div className="login__container">
-        <div className="form-text">Log in</div>
-
-        <div className="form-div">
-          <form className="form__login" onSubmit={this.handleOnSubmit}>
-            <div className="form-group-block">
+        <div className="login__div">
+          <div className="login__title">Log in</div>
+          <div className="form-div">
+            <form className="form__login" onSubmit={this.handleOnSubmit}>
               <div className="block-container">
                 <label htmlFor="email">Email</label>
                 <input
@@ -150,9 +149,7 @@ export class Login extends Component {
                 />
                 <div className="errorMessage">{emailError && emailError}</div>
               </div>
-            </div>
 
-            <div className="form-group-block">
               <div className="block-container">
                 <label htmlFor="password">Password</label>
                 <input
@@ -169,14 +166,14 @@ export class Login extends Component {
                   {passwordError && passwordError}
                 </div>
               </div>
-            </div>
 
-            <div className="button-container">
-              <button type="submit" disabled={canSubmit}>
-                Submit
-              </button>
-            </div>
-          </form>
+              <div className="button-container">
+                <button type="submit" disabled={canSubmit}>
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     );

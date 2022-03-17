@@ -16,7 +16,7 @@ export class Login extends Component {
     password: "",
     passwordError: "",
     passwordOnFocus: false,
-    canSubmit: true,
+    canSubmit: false,
   };
 
   componentDidMount() {
@@ -33,6 +33,7 @@ export class Login extends Component {
         [event.target.name]: event.target.value,
       },
       () => {
+        console.log(this.state.counter);
         if (event.target.name === "email") {
           if (isEmpty(this.state.email)) {
             this.setState({

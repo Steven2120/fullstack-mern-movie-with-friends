@@ -260,12 +260,14 @@ export class Signup extends Component {
     return (
       <div className="signup__container">
         <div className="signup__div">
-          <div className="signup__title">Sign up</div>
+          <div>
+            <div className="signup__title">Sign up</div>
+          </div>
 
           <form className="form__signup" onSubmit={this.handleOnSubmit}>
             <div className="first__second__wrapper">
               <div className="first__half">
-                <div className="inline-container">
+                <div className="first__half__inner">
                   <label className="signup__label" htmlFor="firstName">
                     First Name
                   </label>
@@ -285,106 +287,96 @@ export class Signup extends Component {
                     {firstNameError && firstNameError}
                   </div>
 
-                  <div className="inline-container">
-                    <label className="signup__label" htmlFor="lastName">
-                      Last Name
-                    </label>
-                    <input
-                      className="signup__input"
-                      type="text"
-                      id="lastName"
-                      value={lastName}
-                      placeholder="Last Name"
-                      name="lastName"
-                      onChange={this.handleOnChange}
-                      onBlur={this.handleOnBlur}
-                      onFocus={this.handleInputOnFocus}
-                    />
-                    <div className="errorMessage">
-                      {lastNameError && lastNameError}
-                    </div>
+                  <label className="signup__label" htmlFor="lastName">
+                    Last Name
+                  </label>
+                  <input
+                    className="signup__input"
+                    type="text"
+                    id="lastName"
+                    value={lastName}
+                    placeholder="Last Name"
+                    name="lastName"
+                    onChange={this.handleOnChange}
+                    onBlur={this.handleOnBlur}
+                    onFocus={this.handleInputOnFocus}
+                  />
+                  <div className="errorMessage">
+                    {lastNameError && lastNameError}
                   </div>
-                </div>
 
-                <div className="form-group-block">
-                  <div className="block-container">
-                    <label htmlFor="username">Username</label>
-                    <input
-                      className="signup__input"
-                      type="text"
-                      id="username"
-                      value={username}
-                      placeholder="Username"
-                      onChange={this.handleOnChange}
-                      name="username"
-                      onBlur={this.handleOnBlur}
-                      onFocus={this.handleInputOnFocus}
-                    />
-                    <div className="errorMessage">
-                      {usernameError && usernameError}
-                    </div>
+                  <label className="signup__label" htmlFor="username">
+                    Username
+                  </label>
+                  <input
+                    className="signup__input"
+                    type="text"
+                    id="username"
+                    value={username}
+                    placeholder="Username"
+                    onChange={this.handleOnChange}
+                    name="username"
+                    onBlur={this.handleOnBlur}
+                    onFocus={this.handleInputOnFocus}
+                  />
+                  <div className="errorMessage">
+                    {usernameError && usernameError}
                   </div>
                 </div>
               </div>
 
               <div className="second__half">
-                <div className="form-group-block">
-                  <div className="block-container">
-                    <label htmlFor="email">Email</label>
-                    <input
-                      className="signup__input"
-                      type="text"
-                      id="email"
-                      value={email}
-                      placeholder="Email"
-                      onChange={this.handleOnChange}
-                      name="email"
-                      onBlur={this.handleOnBlur}
-                      onFocus={this.handleInputOnFocus}
-                    />
-                    <div className="errorMessage">
-                      {emailError && emailError}
-                    </div>
-                  </div>
-                </div>
+                <div className="second__half__inner">
+                  <label className="signup__label" htmlFor="email">
+                    Email
+                  </label>
+                  <input
+                    className="signup__input"
+                    type="text"
+                    id="email"
+                    value={email}
+                    placeholder="Email"
+                    onChange={this.handleOnChange}
+                    name="email"
+                    onBlur={this.handleOnBlur}
+                    onFocus={this.handleInputOnFocus}
+                  />
+                  <div className="errorMessage">{emailError && emailError}</div>
 
-                <div className="form-group-block">
-                  <div className="block-container">
-                    <label htmlFor="password">Password</label>
-                    <input
-                      className="signup__input"
-                      type="text"
-                      id="password"
-                      value={password}
-                      placeholder="Password"
-                      onChange={this.handleOnChange}
-                      name="password"
-                      onBlur={this.handleOnBlur}
-                      onFocus={this.handleInputOnFocus}
-                    />
-                    <div className="errorMessage">
-                      {passwordError && passwordError}
-                    </div>
+                  <label className="signup__label" htmlFor="password">
+                    Password
+                  </label>
+                  <input
+                    className="signup__input"
+                    type="text"
+                    id="password"
+                    value={password}
+                    placeholder="Password"
+                    onChange={this.handleOnChange}
+                    name="password"
+                    onBlur={this.handleOnBlur}
+                    onFocus={this.handleInputOnFocus}
+                  />
+                  <div className="errorMessage">
+                    {passwordError && passwordError}
                   </div>
-                </div>
 
-                <div className="form-group-block">
-                  <div className="block-container">
-                    <label htmlFor="confirmPassword">Confirm Password</label>
-                    <input
-                      className="signup__input"
-                      type="text"
-                      id="confirmPassword"
-                      value={confirmPassword}
-                      placeholder="Confirm Password"
-                      onChange={this.handleOnChange}
-                      name="confirmPassword"
-                      onBlur={this.handleOnBlur}
-                      onFocus={this.handleInputOnFocus}
-                    />
-                    <div className="errorMessage">
-                      {confirmPasswordError && confirmPasswordError}
-                    </div>
+                  <label className="signup__label" htmlFor="confirmPassword">
+                    Confirm Password
+                  </label>
+                  <input
+                    className="signup__input"
+                    type="text"
+                    id="confirmPassword"
+                    value={confirmPassword}
+                    placeholder="Confirm Password"
+                    onChange={this.handleOnChange}
+                    name="confirmPassword"
+                    onBlur={this.handleOnBlur}
+                    onFocus={this.handleInputOnFocus}
+                  />
+                  <div className="errorMessage">
+                    {confirmPasswordError && confirmPasswordError}
                   </div>
                 </div>
               </div>

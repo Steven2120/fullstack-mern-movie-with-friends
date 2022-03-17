@@ -5,43 +5,84 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
 }
 
 .signup__div {
   width: 45%;
   height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.678);
   margin-bottom: 1.5rem;
-  border: 1px solid green;
 }
 
   .signup__title {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
     color: #f4f4f4;
-    margin-top: .5rem;
+    margin-top: -5rem;
+  }
+
+  .form__signup {
+    height: 55%;
+    margin-top: -1rem;
   }
 
   .first__second__wrapper {
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    border: 1px solid white;
+    flex-direction: row;
+    justify-content: space-between;
+
   }
 
   .first__half {
-    border: 1px solid red;
+    height: 100%;
+    width: 49%;
+  }
+
+  .first__half > .first__half__inner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .first__half__inner {
     display: flex;
     flex-direction: column;
   }
 
   .second__half {
-    border: 1px solid purple;
+    width: 49%;
+    height: 100%;
+  }
+
+  .second__half > .second__half__inner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .second__half__inner {
     display: flex;
     flex-direction: column;
   }
 
+  .signup__label {
+    color: #f4f4f4;
+    font-size: 1.1em;
+    margin-bottom: .5rem;
+  }
+
+  .signup__input {
+    height: 2rem;
+    margin-bottom: .5rem;
+    outline: none;
+  }
 
   .button-container {
     display: flex;
@@ -49,7 +90,7 @@
     margin-top: 2%;
   }
   .button-container > button {
-    border: none;
+
     background-color: black;
     color: #f4f4f4;
     font-size: 1.6em;
@@ -61,6 +102,6 @@
 
   }
   .errorMessage {
-    font-size: 1em;
+    font-size: .8em;
     color: red;
   }

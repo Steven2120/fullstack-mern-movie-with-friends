@@ -131,7 +131,9 @@ export class Login extends Component {
     return (
       <div className="login__container">
         <div className="login__div">
-          <div className="login__title">Log in</div>
+          <div>
+            <div className="login__title">Log in</div>
+          </div>
 
           <form className="form__login" onSubmit={this.handleOnSubmit}>
             <div className="block-container">

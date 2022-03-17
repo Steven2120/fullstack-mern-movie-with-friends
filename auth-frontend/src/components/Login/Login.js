@@ -132,48 +132,47 @@ export class Login extends Component {
       <div className="login__container">
         <div className="login__div">
           <div className="login__title">Log in</div>
-          <div className="form-div">
-            <form className="form__login" onSubmit={this.handleOnSubmit}>
-              <div className="block-container">
-                <label htmlFor="email">Email</label>
-                <input
-                  className="login__input"
-                  type="email"
-                  id="email"
-                  placeholder="Email"
-                  name="email"
-                  value={email}
-                  onChange={this.handleOnChange}
-                  onFocus={this.handleInputOnFocus}
-                  autoFocus
-                />
-                <div className="errorMessage">{emailError && emailError}</div>
-              </div>
 
-              <div className="block-container">
-                <label htmlFor="password">Password</label>
-                <input
-                  className="login__input"
-                  type="text"
-                  id="password"
-                  placeholder="Password"
-                  name="password"
-                  value={password}
-                  onFocus={this.handleInputOnFocus}
-                  onChange={this.handleOnChange}
-                />
-                <div className="errorMessage">
-                  {passwordError && passwordError}
-                </div>
-              </div>
+          <form className="form__login" onSubmit={this.handleOnSubmit}>
+            <div className="block-container">
+              <label htmlFor="email">Email</label>
+              <input
+                className="login__input"
+                type="email"
+                id="email"
+                placeholder="Email"
+                name="email"
+                value={email}
+                onChange={this.handleOnChange}
+                onFocus={this.handleInputOnFocus}
+                autoFocus
+              />
+              <div className="errorMessage">{emailError && emailError}</div>
+            </div>
 
-              <div className="button-container">
-                <button type="submit" disabled={canSubmit}>
-                  Submit
-                </button>
+            <div className="block-container">
+              <label htmlFor="password">Password</label>
+              <input
+                className="login__input"
+                type="text"
+                id="password"
+                placeholder="Password"
+                name="password"
+                value={password}
+                onFocus={this.handleInputOnFocus}
+                onChange={this.handleOnChange}
+              />
+              <div className="errorMessage">
+                {passwordError && passwordError}
               </div>
-            </form>
-          </div>
+            </div>
+
+            <div className="button-container">
+              <button type="submit" disabled={canSubmit}>
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     );

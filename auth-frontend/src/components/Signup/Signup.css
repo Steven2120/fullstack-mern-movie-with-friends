@@ -8,6 +8,41 @@
   border: 1px solid red;
 }
 
+.signup__div {
+  width: 45%;
+  height: 60%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.678);
+  margin-bottom: 1.5rem;
+  border: 1px solid green;
+}
+
+  .signup__title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #f4f4f4;
+    margin-top: .5rem;
+  }
+
+  .first__second__wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+  }
+
+  .first__half {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second__half {
+    border: 1px solid purple;
+    display: flex;
+    flex-direction: column;
+  }
+
+
   .button-container {
     display: flex;
     justify-content: center;

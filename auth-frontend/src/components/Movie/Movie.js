@@ -171,7 +171,7 @@ export class Movie extends Component {
                     marginLeft: 15,
                     marginRight: 15,
                     cursor: "pointer",
-                    color: currentPage === number ? "red" : "black",
+                    color: currentPage === number ? "red" : "#f4f4f4",
                   }}
                   key={number}
                 >

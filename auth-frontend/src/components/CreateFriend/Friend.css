@@ -1,4 +1,8 @@
-#tr > .friend__table__top {
-    background-color: #d2691d !important;
+.update-container {
+    margin-top: 2rem;
+}
+.friend__table__top {
+    background-color: #d2691d;
     color: #282c36;
+    padding: .8rem;
 }

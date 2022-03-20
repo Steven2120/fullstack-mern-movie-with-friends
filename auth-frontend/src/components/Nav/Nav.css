@@ -62,3 +62,9 @@
   .right-side-nav ul li:not(:last-child) {
     margin-right: 15px;
   }
+
+  @media (max-width: 960px) {
+    .h1-logo h1{
+      font-size: 1rem;
+    }
+  }

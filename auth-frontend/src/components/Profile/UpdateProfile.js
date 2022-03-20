@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { toast } from "react-toastify";
 import Axios from "../utils/Axios";
+import "./UpdateProfile.css";
 
 export class UpdateProfile extends Component {
   state = {
@@ -113,7 +114,7 @@ export class UpdateProfile extends Component {
             />
           </div>
           <div className="button-div">
-            <button style={{ cursor: "pointer" }}>Submit</button>
+            <button>Submit</button>
           </div>
         </form>
       </div>

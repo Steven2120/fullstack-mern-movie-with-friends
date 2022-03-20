@@ -92,7 +92,7 @@ export class CreateFriend extends Component {
         <div className="update-container">
           <h3 className="create__friend__title">Create Friend</h3>
           <form
-            className="create__friend__form__div"
+            className="create__friend__form"
             onSubmit={this.handleFriendSubmit}
           >
             <div className="input-div">
@@ -121,17 +121,18 @@ export class CreateFriend extends Component {
                 value={this.state.friendMobileNumber}
               />
             </div>
-            <button
-              className="create__friend__btn"
-              disabled={
-                !this.state.friendMobileNumber ||
-                !this.state.friendFirstName ||
-                !this.state.friendLastName
-              }
-              style={{ cursor: "pointer" }}
-            >
-              Create Friend
-            </button>
+            <div>
+              <button
+                className="create__friend__btn"
+                disabled={
+                  !this.state.friendMobileNumber ||
+                  !this.state.friendFirstName ||
+                  !this.state.friendLastName
+                }
+              >
+                Create Friend
+              </button>
+            </div>
           </form>
         </div>
         <hr />

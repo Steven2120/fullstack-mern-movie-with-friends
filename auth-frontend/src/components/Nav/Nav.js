@@ -7,7 +7,7 @@ export class Nav extends Component {
   render() {
     console.log(this.props);
     return (
-      <nav className="Navbar">
+      <nav className="navbar">
         <div className="h1-logo">
           <h1>
             <Link className="nav__link__mwf" to="/">

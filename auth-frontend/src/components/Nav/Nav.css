@@ -1,5 +1,7 @@
-.Navbar {
-    height: 75px;
+.navbar {
+    height: 6rem;
+    border: 1px solid red;
+    width: 100%;
     background-color: black;
     color: white;
     display: flex;
@@ -41,6 +43,10 @@
     font-size: 1.4em;
   }
 
+  .right-side-nav {
+    height: auto;
+  }
+
   .right-side-nav > ul {
     padding: 1.5rem;
   }
@@ -62,16 +68,49 @@
     margin-right: 15px;
   }
 
-  @media (max-width: 1160px) {
-    .h1-logo {
-      margin: none;
-    }
+  @media (max-width: 1100px) {
+   .navbar {
+     display: flex;
+     justify-content: flex-start;
+   }
 
     .nav__link__mwf {
-      font-size: 1.2em;
+      font-size: 1.1em;
     }
   
     .nav__link {
+      font-size: .9em;
+    }
+
+    #welcome {
+    font-size: .9em;
+    }
+  }
+
+  @media (max-width: 995px) {
+    .nav__link__mwf {
+      font-size: .9em;
+    }
+
+    .nav__link {
       font-size: .8em;
     }
+
+    #welcome {
+      font-size: .8em;
+      }
+  }
+
+  @media (max-width: 922px) {
+    .nav__link__mwf {
+      font-size: .8em;
+    }
+
+    .right-side-nav > ul {
+      height: auto;
+      display: grid;
+      grid-template-columns: 20% 20% 50% 10%;
+      border: 1px solid red;
+    }
+
   }

@@ -16,7 +16,7 @@ export class Login extends Component {
     password: "",
     passwordError: "",
     passwordOnFocus: false,
-    canSubmit: true,
+    canSubmit: false,
   };
 
   componentDidMount() {
@@ -37,6 +37,7 @@ export class Login extends Component {
           if (isEmpty(this.state.email)) {
             this.setState({
               emailError: "Email cannot be empty",
+              canSubmit: false,
             });
           } else {
             this.setState({
@@ -49,6 +50,7 @@ export class Login extends Component {
           if (isEmpty(this.state.password)) {
             this.setState({
               passwordError: "Password cannot be empty",
+              canSubmit: false,
             });
           } else {
             this.setState({
@@ -61,7 +63,7 @@ export class Login extends Component {
   };
 
   componentDidUpdate(prevProps, prevState) {
-    if (prevState.canSubmit === true) {
+    if (prevState.canSubmit === false) {
       if (this.state.emailOnFocus && this.state.passwordOnFocus) {
         if (
           this.state.emailError.length === 0 &&
@@ -69,10 +71,6 @@ export class Login extends Component {
         ) {
           this.setState({
             canSubmit: true,
-          });
-        } else {
-          this.setState({
-            canSubmit: false,
           });
         }
       }
@@ -168,14 +166,7 @@ export class Login extends Component {
             </div>
 
             <div className="button-container">
-              <button
-                type="submit"
-                disabled={
-                  canSubmit ||
-                  this.state.emailError.length > 0 ||
-                  this.state.passwordError.length > 0
-                }
-              >
+              <button type="submit" disabled={!canSubmit}>
                 Submit
               </button>
             </div>

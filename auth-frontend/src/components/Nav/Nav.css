@@ -37,13 +37,12 @@
     transition: all .5s ease-out;
   }
 
-  .h1-logo h1 {
-    font-size: 1.4rem;
+  .nav__link__mwf {
+    font-size: 1.4em;
   }
 
   .right-side-nav > ul {
     padding: 1.5rem;
-    border: 1px solid red;
   }
 
   .right-side-nav > ul > li {
@@ -63,8 +62,16 @@
     margin-right: 15px;
   }
 
-  @media (max-width: 960px) {
-    .h1-logo h1{
-      font-size: 1rem;
+  @media (max-width: 1160px) {
+    .h1-logo {
+      margin: none;
+    }
+
+    .nav__link__mwf {
+      font-size: 1.2em;
+    }
+  
+    .nav__link {
+      font-size: .8em;
     }
   }

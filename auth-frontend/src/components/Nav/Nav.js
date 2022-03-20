@@ -10,7 +10,7 @@ export class Nav extends Component {
       <nav className="Navbar">
         <div className="h1-logo">
           <h1>
-            <Link className="nav__link" to="/">
+            <Link className="nav__link__mwf" to="/">
               Movie with friends!
             </Link>
           </h1>

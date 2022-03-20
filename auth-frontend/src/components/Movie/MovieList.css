@@ -2,12 +2,7 @@
     width: 100%;
     height: 100%;
     margin-right: 25;
-    border: 1px solid blue;
     margin: .4rem;
-}
-
-.movielist__img__div {
-    border: 1px solid pink;
 }
 
 .movie__img {

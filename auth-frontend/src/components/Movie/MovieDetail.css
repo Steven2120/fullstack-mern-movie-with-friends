@@ -1,12 +1,10 @@
 .movie__detail__div {
     display: flex;
     justify-content: space-around;
-    border: 1px solid red;
     margin-bottom: 2rem;
 }
 
 .movie__poster {
-    border: 1px solid yellow;
     width: auto;
 
 }

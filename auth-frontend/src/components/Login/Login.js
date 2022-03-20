@@ -16,7 +16,7 @@ export class Login extends Component {
     password: "",
     passwordError: "",
     passwordOnFocus: false,
-    canSubmit: false,
+    canSubmit: true,
   };
 
   componentDidMount() {
@@ -33,12 +33,10 @@ export class Login extends Component {
         [event.target.name]: event.target.value,
       },
       () => {
-        console.log(this.state.counter);
         if (event.target.name === "email") {
           if (isEmpty(this.state.email)) {
             this.setState({
               emailError: "Email cannot be empty",
-              canSubmit: true,
             });
           } else {
             this.setState({
@@ -51,7 +49,6 @@ export class Login extends Component {
           if (isEmpty(this.state.password)) {
             this.setState({
               passwordError: "Password cannot be empty",
-              canSubmit: true,
             });
           } else {
             this.setState({
@@ -71,11 +68,11 @@ export class Login extends Component {
           this.state.passwordError.length === 0
         ) {
           this.setState({
-            canSubmit: false,
+            canSubmit: true,
           });
         } else {
           this.setState({
-            canSubmit: true,
+            canSubmit: false,
           });
         }
       }
@@ -171,7 +168,14 @@ export class Login extends Component {
             </div>
 
             <div className="button-container">
-              <button type="submit" disabled={canSubmit}>
+              <button
+                type="submit"
+                disabled={
+                  canSubmit ||
+                  this.state.emailError.length > 0 ||
+                  this.state.passwordError.length > 0
+                }
+              >
                 Submit
               </button>
             </div>

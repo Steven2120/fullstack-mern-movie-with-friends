@@ -45,6 +45,7 @@
 
   .right-side-nav {
     height: auto;
+    width: 100%;
   }
 
   .right-side-nav > ul {
@@ -173,9 +174,13 @@
     }
   }
 
-  @media (max-width: 305px) {
+  @media (max-width: 320px) {
     .navbar > .h1-logo {
       margin-left: -.01rem
+    }
+
+    .right-side-nav > ul {
+      margin-left: -.3rem;
     }
 
     .navbar > .h1-logo {

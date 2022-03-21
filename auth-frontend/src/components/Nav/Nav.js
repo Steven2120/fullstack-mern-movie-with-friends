@@ -45,7 +45,7 @@ export class Nav extends Component {
             </li>
             <li>
               {this.props.user ? (
-                <div>
+                <div className="large__section__nav">
                   <span id="welcome">
                     Welcome Back - {this.props.user.email}
                   </span>
@@ -68,11 +68,10 @@ export class Nav extends Component {
                 </NavLink>
               )}
             </li>
-            <li>
+            <li id="logout__id">
               {this.props.user ? (
                 <NavLink
                   className="nav__link"
-                  activeStyle={{ borderBottom: "1px solid white" }}
                   to="/"
                   onClick={this.props.handleUserLogout}
                 >

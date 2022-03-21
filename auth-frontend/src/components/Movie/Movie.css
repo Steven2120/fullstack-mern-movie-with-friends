@@ -100,3 +100,60 @@
 .pagination__next__btn:disabled:hover {
     cursor: not-allowed;
 }
+
+@media (max-width: 1100px) {
+    #search__input {
+        width: 18rem;
+    }
+
+    .search__btn {
+        width: 5rem;
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 922px) {
+    #search__input {
+        width: 14rem;
+    }
+
+    .search__btn {
+        width: 4rem;
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 635px) {
+    #search__input {
+        width: 12rem;
+    }
+
+    .search__btn {
+        width: 3.5rem;
+        font-size: 7.em;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #search__input {
+        width: 11rem;
+    }
+
+    .search__btn {
+        width: 3rem;
+        font-size: .6em;
+    }
+}
+
+@media (max-width: 390px) {
+    #search__input {
+        width: 9rem;
+    }
+}
+
+@media (max-width: 390px) {
+    #search__input {
+        width: 7.5rem;
+    }
+}

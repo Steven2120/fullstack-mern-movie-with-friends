@@ -17,6 +17,11 @@
     color: white;
   }
 
+  .h1-logo a:hover {
+    color: #f5cb99;
+    transition: all .6s ease-out;
+  }
+
   .nav__link {
     text-decoration: none;
     font-size: 1em;
@@ -63,6 +68,21 @@
 
   .selected {
     border-bottom: 1px solid white;
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .signup__login__div > a {
+    text-decoration: none;
+    color: #f4f4f4;
+  }
+
+  .signup__login__div > a:hover {
+    color: #f5cb99;
+    transition: all .6s ease-out;
   }
 
   .right-side-nav ul li:not(:last-child) {

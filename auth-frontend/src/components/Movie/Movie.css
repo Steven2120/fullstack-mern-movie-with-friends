@@ -110,6 +110,19 @@
         width: 5rem;
         font-size: .9em;
     }
+
+    .pagination__prev__btn, .pagination__prev__btn__off {
+        width: 5rem;
+    }
+
+    .pagination__next__btn {
+        width: 5rem;
+    }
+
+    .numbers__div {
+        background-color: black;
+        width: auto;
+    }
 }
 
 @media (max-width: 922px) {

@@ -59,13 +59,15 @@ export class Nav extends Component {
                   </NavLink>
                 </div>
               ) : (
-                <NavLink
-                  className="nav__link"
-                  activeClassName="selected"
-                  to="/sign-up"
-                >
-                  Sign up
-                </NavLink>
+                <div className="signup__login__div">
+                  <NavLink
+                    className="nav__link__signup"
+                    activeClassName="selected"
+                    to="/sign-up"
+                  >
+                    Sign up
+                  </NavLink>
+                </div>
               )}
             </li>
             <li id="logout__id">
@@ -78,13 +80,15 @@ export class Nav extends Component {
                   Logout
                 </NavLink>
               ) : (
-                <NavLink
-                  className="nav__link"
-                  activeStyle={{ borderBottom: "1px solid white" }}
-                  to="/login"
-                >
-                  Login
-                </NavLink>
+                <div className="signup__login__div">
+                  <NavLink
+                    className="nav__link__login"
+                    activeStyle={{ borderBottom: "1px solid white" }}
+                    to="/login"
+                  >
+                    Login
+                  </NavLink>
+                </div>
               )}
             </li>
           </ul>

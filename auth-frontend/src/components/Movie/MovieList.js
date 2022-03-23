@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./MovieList.css";
 
 function MovieList(props) {
-  console.log(props);
+  // console.log(props);
   if (props.movieArray === undefined) {
     return <div className="not__found">Movie not found. Please try again.</div>;
   } else {

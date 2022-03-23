@@ -61,10 +61,10 @@ export class Movie extends Component {
         );
 
         //logs results object where you can find total results
-        console.log(result);
+        // console.log(result);
 
         //logs total amount of pages for the searched result including default random search
-        console.log(totalPageArray);
+        // console.log(totalPageArray);
 
         this.setState({
           movie: randomMovieTitle,
@@ -119,20 +119,19 @@ export class Movie extends Component {
   onSubmit = async (event) => {
     try {
       let result = await this.handleSearchMovie(this.state.movie);
-
+      console.log(result);
       window.sessionStorage.setItem("searchedMovieTitle", this.state.movie);
 
       let totalPageArray = this.getTotalPages(
         +result.data.totalResults,
         this.state.perPage
       );
-
       this.setState({
         movieArray: result.data.Search,
         totalPage: +result.data.totalResults,
         pageArray: totalPageArray,
       });
-      console.log(this.state.movie);
+      // console.log(this.state.movie);
       //catches error and logs it
     } catch (e) {
       this.setState({
@@ -157,15 +156,16 @@ export class Movie extends Component {
 
     const buildPagination = () => {
       return (
-        <>
+        <div>
           {this.state.pageArray.map((number) => {
-            console.log(number < maxPageLimit + 1 && number > minPageLimit);
+            // console.log(number < maxPageLimit + 1 && number > minPageLimit);
             // console.log("number: ", number);
             // console.log("maxPageLimit + 1", maxPageLimit);
 
             if (number < maxPageLimit + 1 && number > minPageLimit) {
               return (
                 <span
+                  className="numbers"
                   onClick={() => this.handleGoToPage(number)}
                   style={{
                     marginLeft: 15,
@@ -180,7 +180,7 @@ export class Movie extends Component {
               );
             }
           })}
-        </>
+        </div>
       );
     };
 
@@ -249,7 +249,17 @@ export class Movie extends Component {
         };
       },
       async () => {
-        let result = await this.handleSearchMovie("batman");
+        let movie = "";
+
+        let searchedMovieTitleSessionStorage =
+          window.sessionStorage.getItem("searchedMovieTitle");
+
+        movie = searchedMovieTitleSessionStorage
+          ? window.sessionStorage.getItem("searchedMovieTitle")
+          : this.state.movie;
+
+        let result = await this.handleSearchMovie(movie);
+
         console.log(result);
         this.setState({
           movieArray: result.data.Search,
@@ -304,7 +314,7 @@ export class Movie extends Component {
             >
               Previous
             </button>
-            {this.showpagination()}
+            <div className="numbers__div">{this.showpagination()}</div>
             <button
               onClick={this.nextPage}
               disabled={

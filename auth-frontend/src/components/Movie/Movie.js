@@ -13,7 +13,7 @@ export class Movie extends Component {
     movieArray3: [],
     totalCount: 0,
     totalPage: 0,
-    perPage: 10,
+    perPage: 12,
     currentPage: 1,
     maxPageLimit: 10,
     minPageLimit: 0,
@@ -26,6 +26,7 @@ export class Movie extends Component {
     for (let i = 1; i < Math.ceil(totalResults / perPage); i++) {
       pages.push(i);
     }
+    console.log(pages);
     return pages;
   };
 
@@ -50,6 +51,7 @@ export class Movie extends Component {
           totalPage: +result.data.totalResults, //in batman result is 440
           pageArray: totalPageArray,
         });
+        console.log(this.state.movieArray);
       } else {
         let randomMovieTitle = this.handleRandomTitle();
         let result = await this.handleSearchMovie(randomMovieTitle);
@@ -294,7 +296,7 @@ export class Movie extends Component {
 
         <div className="movie__canvas">
           <span className="canvas__title">Movies</span>
-          <div className="movielist__div">
+          <div className="movielist__div1">
             <MovieList movieArray={this.state.movieArray} />
           </div>
         </div>

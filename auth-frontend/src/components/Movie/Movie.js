@@ -13,7 +13,7 @@ export class Movie extends Component {
     movieArray3: [],
     totalCount: 0,
     totalPage: 0,
-    perPage: 12,
+    perPage: 10,
     currentPage: 1,
     maxPageLimit: 10,
     minPageLimit: 0,
@@ -158,7 +158,7 @@ export class Movie extends Component {
 
     const buildPagination = () => {
       return (
-        <div>
+        <div className="pag__div">
           {this.state.pageArray.map((number) => {
             // console.log(number < maxPageLimit + 1 && number > minPageLimit);
             // console.log("number: ", number);
@@ -170,8 +170,6 @@ export class Movie extends Component {
                   className="numbers"
                   onClick={() => this.handleGoToPage(number)}
                   style={{
-                    marginLeft: 15,
-                    marginRight: 15,
                     cursor: "pointer",
                     color: currentPage === number ? "red" : "#f4f4f4",
                   }}
@@ -187,8 +185,8 @@ export class Movie extends Component {
     };
 
     return (
-      <div>
-        <ul>{buildPagination()}</ul>
+      <div className="pag__numbers__div">
+        <ul className="pag__ul">{buildPagination()}</ul>
       </div>
     );
   };
@@ -279,7 +277,7 @@ export class Movie extends Component {
 
   render() {
     return (
-      <div>
+      <div className="main__div">
         <div className="search__bar">
           <input
             id="search__input"

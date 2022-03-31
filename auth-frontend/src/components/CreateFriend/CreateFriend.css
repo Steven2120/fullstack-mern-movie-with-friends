@@ -17,7 +17,7 @@
 
 .create__friend__btn {
     width: 40%;
-    border-radius: 20px;
+    border-radius: 8px;
     background-color: #f4f4f4;
     color: #282c36;
     font-size: 1rem;
@@ -36,4 +36,170 @@
     background-color: #282c36;
     color: #f4f4f4;
     transition: all .6s ease-in-out;
+}
+
+@media (max-width: 1400px) {
+    .create__friend__form {
+        width: 40%;
+    }
+
+    .input-div {
+        width: auto;
+    }
+}
+
+@media (max-width: 1300px) {
+    .create__friend__title {
+        font-size: 2.4em;
+    }
+}
+
+@media (max-width: 1400px) {
+    .create__friend__form {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .create__friend__form {
+        width: 45%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .create__friend__title {
+        font-size: 2.3em;
+    }
+
+    .create__friend__btn {
+        width: 35%;
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 1050px) {
+    .create__friend__form {
+        width: 50%;
+    }
+}
+
+@media (max-width: 970px) {
+    .create__friend__title {
+        font-size: 2em;
+    }
+
+    .create__friend__btn {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 850px) {
+    .create__friend__form {
+        width: 55%;
+    }
+}
+
+@media (max-width: 782px) {
+    .create__friend__btn {
+        font-size: .7em;
+        padding: .2rem;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 752px) {
+    .create__friend__form {
+        width: 60%;
+    }
+
+    .create__friend__title {
+        font-size: 1.8em;
+    }
+
+    .create__friend__btn {
+        font-size: .65em;
+    }
+}
+
+@media (max-width: 710px) {
+    .create__friend__btn {
+        font-size: .6em;
+    }
+}
+@media (max-width: 651px) {
+    .create__friend__title {
+        font-size: 1.6em;
+    }
+
+    .create__friend__form {
+        width: 65%;
+    }
+}
+
+@media (max-width: 550px) {
+    .create__friend__title {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 500px) {
+    .create__friend__form {
+        width: 70%;
+    }
+}
+
+@media (max-width: 461px) {
+    .create__friend__btn {
+        width: 40%;
+    }
+}
+
+@media (max-width: 450px) {
+    .create__friend__form {
+        width: 75%;
+    }
+}
+
+@media (max-width: 400px) {
+    .create__friend__form {
+        width: 80%;
+    }
+
+    .create__friend__title {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 385px) {
+    .create__friend__btn {
+        width: 40%;
+    }
+}
+
+@media (max-width: 360px) {
+    .create__friend__form {
+        width: 85%;
+    }
+}
+
+@media (max-width: 330px) {
+    .create__friend__form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 325px) {
+    .create__friend__title {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 300px) {
+    .create__friend__form {
+        width: 95%;
+    }
+
+    .create__friend__btn {
+        width: 40%;
+    }
 }

@@ -6,7 +6,7 @@ export class Friend extends Component {
   render() {
     return (
       <div className="update-container">
-        <table id="friends">
+        <table className="create__friend__form" id="friends">
           <thead>
             <tr id="tr">
               <th className="friend__table__top">First name</th>

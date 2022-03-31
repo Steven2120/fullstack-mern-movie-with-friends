@@ -6,3 +6,39 @@
     color: #282c36;
     padding: .8rem;
 }
+
+@media (max-width: 1190px) {
+    .friend__table__top {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 1115px) {
+    .friend__table__top {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 852px) {
+    .friend__table__top {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 452px) {
+    .friend__table__top {
+        font-size: .65rem;
+    }
+}
+
+@media (max-width: 365px) {
+    .friend__table__top {
+        font-size: .6rem;
+    }
+}
+
+@media (max-width: 335px) {
+    .friend__table__top {
+        padding: .5rem;
+    }
+}

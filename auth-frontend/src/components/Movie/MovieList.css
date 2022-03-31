@@ -42,6 +42,10 @@
     .movie__title {
         font-size: .8em;
     }
+
+    #text__info {
+        height: 20rem;
+    }
 }
 
 @media (max-width: 390px) {

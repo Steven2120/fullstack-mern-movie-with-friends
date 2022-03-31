@@ -86,7 +86,9 @@ export class MovieDetail extends Component {
           <img src={this.state.Poster} alt={this.state.Title} />
         </div>
         <div className="movie__info">
-          <div className="subject">Actors: {this.state.Actors}</div>
+          <div id="first__subject" className="subject">
+            Actors: {this.state.Actors}
+          </div>
           <div className="subject">Awards: {this.state.Awards}</div>
           <div className="subject">Country: {this.state.Country}</div>
           <div className="subject">Plot: {this.state.Plot}</div>
@@ -154,8 +156,9 @@ export class MovieDetail extends Component {
         ) : (
           <div>
             {this.showMovieDetail()}
-            <div style={{ width: 250, margin: "0 auto", textAlign: "center" }}>
+            <div className="send__text">
               <select
+                id="select__friend"
                 disabled={this.state.Ratings ? false : true}
                 style={{ marginBottom: "1rem", cursor: "pointer" }}
                 onChange={this.handleSelectChange}
@@ -169,18 +172,24 @@ export class MovieDetail extends Component {
                   );
                 })}
               </select>
-              <textarea
-                disabled={this.state.Ratings ? false : true}
-                style={{ width: "20em", height: "10em" }}
-                defaultValue={this.state.friendMessage}
-              />
-              <button
-                disabled={this.state.Ratings ? false : true}
-                style={{ marginTop: "1rem", cursor: "pointer" }}
-                onClick={this.handleFormSubmit}
-              >
-                Submit
-              </button>
+              <div>
+                <textarea
+                  id="text__info"
+                  disabled={this.state.Ratings ? false : true}
+                  style={{ width: "20em", height: "10em" }}
+                  defaultValue={this.state.friendMessage}
+                />
+              </div>
+              <div>
+                <button
+                  id="submit__text"
+                  disabled={this.state.Ratings ? false : true}
+                  style={{ marginTop: "1rem", cursor: "pointer" }}
+                  onClick={this.handleFormSubmit}
+                >
+                  Submit
+                </button>
+              </div>
             </div>
           </div>
         )}

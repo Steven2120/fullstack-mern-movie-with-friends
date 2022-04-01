@@ -16,7 +16,7 @@ export class Friend extends Component {
               <th className="friend__table__top">Delete</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="table__canvas">
             {this.props.friendArray.map((friend) => {
               return (
                 <FriendList

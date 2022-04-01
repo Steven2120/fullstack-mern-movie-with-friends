@@ -1,4 +1,72 @@
+.tr__friend__addition {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
 .friend__addition {
+    height: 100%;
+    width: 100%;
     color: #282c36;
-    background-color: #f5cb99;
+    background-color: #f5c385c5;
+    border-left: 1px solid #282c36;
+    border-bottom: 1px solid #282c36;
+    margin-bottom: .5rem;
+}
+
+#edit__friend:hover {
+    color: red;
+    transition: all .5s ease-out;
+}
+
+#delete__friend:hover {
+    color: red;
+    transition: all .5s ease-out;
+}
+
+#update__friend:hover {
+    color: red;
+    transition: all .5s ease-out;
+}
+
+#update__input1 {
+    background-color: #f4f4f4;
+}
+
+#update__input2 {
+    background-color: #f4f4f4;
+}
+
+#update__input3 {
+    background-color: #f4f4f4;
+}
+
+@media (max-width: 1190px) {
+    .friend__addition {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .friend__addition {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .friend__addition {
+        font-size: .75rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .friend__addition {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 325px) {
+    .friend__addition {
+        font-size: .65rem;
+    }
 }

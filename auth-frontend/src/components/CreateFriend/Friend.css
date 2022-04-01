@@ -2,9 +2,20 @@
     margin-top: 2rem;
 }
 .friend__table__top {
-    background-color: #d2691d;
+    background-color: #f5cc99b0;
     color: #282c36;
     padding: .8rem;
+}
+
+.table__canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table__canvas > tr {
+    height: 100%;
+    width: 100%;
 }
 
 @media (max-width: 1190px) {

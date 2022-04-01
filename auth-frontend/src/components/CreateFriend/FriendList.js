@@ -62,11 +62,13 @@ export class FriendList extends Component {
     const { toggle } = this.state;
 
     return (
-      <tr key={friend._id}>
+      <tr className="tr__friend__addition" key={friend._id}>
         {toggle ? (
           <>
             <td className="friend__addition">
               <input
+                id="update__input1"
+                className="friend__addition"
                 name="firstName"
                 onChange={this.handleUpdateFriendChange}
                 defaultValue={friend.firstName}
@@ -75,6 +77,8 @@ export class FriendList extends Component {
 
             <td className="friend__addition">
               <input
+                id="update__input2"
+                className="friend__addition"
                 name="lastName"
                 onChange={this.handleUpdateFriendChange}
                 defaultValue={friend.lastName}
@@ -83,6 +87,8 @@ export class FriendList extends Component {
 
             <td className="friend__addition">
               <input
+                id="update__input3"
+                className="friend__addition"
                 name="mobileNumber"
                 onChange={this.handleUpdateFriendChange}
                 defaultValue={friend.mobileNumber}
@@ -99,6 +105,7 @@ export class FriendList extends Component {
 
         {toggle ? (
           <td
+            id="update__friend"
             className="friend__addition"
             style={{ cursor: "pointer" }}
             onClick={() => this.handleUpdateClick(friend._id)}
@@ -107,6 +114,7 @@ export class FriendList extends Component {
           </td>
         ) : (
           <td
+            id="edit__friend"
             className="friend__addition"
             style={{ cursor: "pointer" }}
             onClick={this.handleToggle}
@@ -116,6 +124,7 @@ export class FriendList extends Component {
         )}
 
         <td
+          id="delete__friend"
           className="friend__addition"
           style={{ cursor: "pointer" }}
           onClick={() => this.handleDeleteClick(friend._id)}

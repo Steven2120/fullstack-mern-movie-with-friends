@@ -72,8 +72,11 @@ export class UpdateProfile extends Component {
   render() {
     return (
       <div className="update-container">
-        <h3 className="update__title">Update Profile</h3>
-        <form className="update__form" onSubmit={this.handleUserUpdateSubmit}>
+        <h3 className="create__friend__title">Update Profile</h3>
+        <form
+          className="create__friend__form"
+          onSubmit={this.handleUserUpdateSubmit}
+        >
           <div className="input-div">
             <input
               placeholder="first name"
@@ -113,8 +116,8 @@ export class UpdateProfile extends Component {
               onChange={this.handleUserInputOnChange}
             />
           </div>
-          <div className="button-div">
-            <button>Submit</button>
+          <div className="button-div1">
+            <button className="create__friend__btn">Submit</button>
           </div>
         </form>
       </div>

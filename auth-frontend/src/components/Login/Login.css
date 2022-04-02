@@ -32,7 +32,7 @@
 }
 
 .block-container {
-    width: 45%;
+    width: 65%;
 }
 
 .block-container > label {
@@ -74,4 +74,220 @@
 
 .button-container > button:disabled:hover {
     cursor: not-allowed;
+}
+
+@media (max-width: 1400px) {
+    .login__div {
+        width: 45%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .login__div {
+        width: 50%;
+    }
+
+    .login__title {
+        font-size: 2.4em;
+    }
+
+    .button-container > button {
+        font-size: 1.4em !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .login__div {
+        width: 55%;
+    }
+
+    .button-container > button {
+        height: 2.2rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .login__title {
+        font-size: 2.3em;
+    }
+
+    .button-container > button {
+        height: 2.1rem;
+        font-size: 1.3em !important;
+    }
+
+    .block-container > label {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 1050px) {
+    .login__div {
+        width: 60%;
+    }
+}
+
+@media (max-width: 970px) {
+    .login__title {
+        font-size: 2em;
+    }
+
+    .button-container > button {
+        font-size: 1.2em !important;
+    }
+
+    .block-container > label {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 900px) {
+    .login__div {
+        width: 65%;
+    }
+
+    .button-container > button {
+        height: 2rem;
+    }
+
+    .login__input {
+        height: 2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .login__div {
+        width: 70%;
+    }
+
+    .login__title {
+        font-size: 1.8em;
+    }
+
+    .block-container > label {
+        font-size: .9em;
+    }
+
+    .button-container > button {
+        height: 1.9rem;
+        font-size: 1em !important;
+    }
+}
+
+@media (max-width: 650px) {
+    .login__div {
+        width: 75%;
+    }
+
+    .button-container > button {
+        height: 1.8rem;
+        font-size: .9em !important;
+    }
+
+    .login__title {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-height: 600px) {
+    .login__div {
+      height: auto;
+    }
+  }
+
+@media (max-width: 550px) {
+    .login__title {
+        font-size: 1.4em;
+    }
+
+    .button-container > button {
+        height: 1.6rem;
+        font-size: .85em !important;
+    }
+
+    .login__input {
+        height: 1.9rem;
+    }
+
+    .block-container > label {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 500px) {
+    .login__div {
+        width: 80%;
+    }
+
+    .button-container > button {
+        height: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .login__div {
+        width: 85%;
+    }
+
+    .login__input {
+        height: 1.7rem;
+    }
+
+    .button-container > button {
+        height: 1.4rem;
+        font-size: .8em !important;
+    }
+
+    .login__title {
+        font-size: 1.3em;
+    }
+
+    .block-container > label {
+        font-size: .7em;
+    }
+}
+
+@media (max-height: 373px) {
+    .login__div {
+      margin-top: 7rem;
+    }
+  }
+
+@media (max-width: 350px) {
+    .login__div {
+        width: 90%;
+    }
+
+    .button-container > button {
+        font-size: .75rem !important;
+    }
+}
+
+@media (max-width: 325px) {
+    .login__title {
+        font-size: 1.2em;
+    }
+
+    .block-container > label {
+        font-size: .65em;
+    }
+
+    .button-container > button {
+        height: 1.2rem;
+        font-size: .7em !important;
+    }
+}
+
+@media (max-width: 300px) {
+    .login__div {
+        width: 95%;
+    }
+
+    .button-container > button {
+        font-size: .65rem !important;
+    }
+
+    .login__input {
+        height: 1.6rem;
+    }
 }

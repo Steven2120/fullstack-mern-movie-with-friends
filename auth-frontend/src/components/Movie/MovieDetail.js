@@ -181,7 +181,6 @@ export class MovieDetail extends Component {
                 />
               </div>
               <div>
-                {/* button not generating text for friend */}
                 <button
                   id="submit__text"
                   disabled={this.state.Ratings ? false : true}

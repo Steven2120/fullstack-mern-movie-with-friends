@@ -11,7 +11,6 @@ const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require("twilio")(accountSid, authToken);
 
-//issue encountered with twilio account
 router.post("/send-sms", jwtMiddleware, function (req, res) {
   client.messages
     .create({
